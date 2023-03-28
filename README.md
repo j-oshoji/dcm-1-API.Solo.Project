@@ -39,26 +39,27 @@
 
 - usersTBLに追加するためのAPI
 - Request
-    - POST /api/new 
+    - POST /api/user 
 
 ### Read（参照）
 #### 指定されたユーザIDをキーにusersTBLから情報取得するためのAPI
 - Request
-    - GET /api/view/:id
+    - GET /api/user/:id
 
 ### Update（更新）
 #### 指定されたユーザIDの情報を更新するためのAPI
 - Request
-    - PATCH /api/edit/:id
+    - PATCH /api/user/:id
 
 ### Delete（削除）
 #### 指定されたユーザIDの情報を削除するためのAPI
 - Request
-    - DELETE /api/delete/:id
+    - DELETE /api/user/:id
 
 
 ## おまけ
+
 ### allUser（参照）
 #### DBの中身を確認する用のAPI
 - Request
-    - GET /api/user/all
+    - GET /api/users
