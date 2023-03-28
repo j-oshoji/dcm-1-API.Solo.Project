@@ -1,0 +1,1 @@
+# j-oshoji-dcm-1-API.Solo.Project
