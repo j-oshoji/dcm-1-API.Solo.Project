@@ -15,8 +15,8 @@
 
 ## イントロダクション
 
-超シンプルなDB操作API群
-極力オリジナリティを出さずに要件のみを忠実に再現できるかの挑戦
+- 超シンプルなDB操作API群
+- 極力オリジナリティを出さずに要件のみを忠実に再現できるかの挑戦
 
 
 ## 目的
@@ -27,43 +27,38 @@
 
 ## DB構成
 
-usersTBL
- - id: UserID(PrimaryKey)
- - name: UserName(String)
+### usersTBL
+- id: UserID(Integer：PrimaryKey)
+- name: UserName(String)
 
 ## API説明
 
-4つのAPIを作成（CRUD）
+- 4つのAPIを作成（CRUD）
 
 ### Create（追加）
 
-usersTBLに追加するためのAPI
-Request
- POST /api/new 
+- usersTBLに追加するためのAPI
+- Request
+    - POST /api/new 
 
 ### Read（参照）
-
-指定されたユーザIDをキーにusersTBLから情報取得するためのAPI
-Request
- GET /api/view/:id
+#### 指定されたユーザIDをキーにusersTBLから情報取得するためのAPI
+- Request
+    - GET /api/view/:id
 
 ### Update（更新）
-
-指定されたユーザIDの情報を更新するためのAPI
-Request
- PATCH /api/edit/:id
+#### 指定されたユーザIDの情報を更新するためのAPI
+- Request
+    - PATCH /api/edit/:id
 
 ### Delete（削除）
-
-指定されたユーザIDの情報を削除するためのAPI
-Request
- DELETE /api/delete/:id
+#### 指定されたユーザIDの情報を削除するためのAPI
+- Request
+    - DELETE /api/delete/:id
 
 
 ## おまけ
-
 ### allUser（参照）
-
-DBの中身を確認する用のAPI
-Request
- GET /api/user/all
+#### DBの中身を確認する用のAPI
+- Request
+    - GET /api/user/all
